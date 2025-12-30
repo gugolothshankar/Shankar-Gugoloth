@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Shankar Gugoloth — Personal</title>
-  <meta name="description" content="Shankar Gugoloth — PhD scholar. Projects, blog, and contact." />
+  <meta name="description" content="Shankar Gugoloth — software engineer. Projects, blog, and contact." />
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -46,16 +46,8 @@
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Project A</h3>
-            <p>Short description. <a href="#">View</a></p>
-          </article>
-          <article class="card">
-            <h3>Project B</h3>
-            <p>Short description. <a href="#">View</a></p>
-          </article>
-        </div>
+        <!-- JS will render project cards into this grid -->
+        <div id="projects-list" class="grid" aria-live="polite"></div>
       </div>
     </section>
 
@@ -88,6 +80,7 @@
     </div>
   </footer>
 
+  <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
